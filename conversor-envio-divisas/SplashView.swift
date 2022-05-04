@@ -15,7 +15,13 @@ struct SplashView: View {
     var body: some View {
         ZStack{
             ZStack{
-                Color("SplashBg")
+                Image("SplashBg")
+                    .resizable()
+                    .renderingMode(.original)
+                    .aspectRatio(contentMode: animate ? .fill:.fit)
+                    .frame(width: animate ? nil: 1000, height:animate ? nil: 1000)
+                    .scaleEffect(animate ? 3:1)
+                    .frame(width: UIScreen.main.bounds.width)
                 Image("SplashLarge")
                     .resizable()
                     .renderingMode(.original)
