@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack{
-            SplashView()
-            HomeView()
+        NavigationView{
+            ZStack{
+                SplashView()
+                HomeView()
+            }
+            .navigationBarTitle("")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
         }
     }
 }
