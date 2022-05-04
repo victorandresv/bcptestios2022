@@ -14,6 +14,10 @@ struct ListItemDivisaView: View {
     var body: some View {
         HStack(spacing:0){
             divisa.flag
+                .resizable()
+                .renderingMode(.original)
+                .frame(width: 100, height:60)
+                .aspectRatio(contentMode: .fill)
             
             VStack(alignment:.leading, spacing:0){
                 Text(divisa.name)
