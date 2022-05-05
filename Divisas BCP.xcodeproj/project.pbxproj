@@ -16,6 +16,7 @@
 		CAAFFBD328232B1600CB8851 /* DivisasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFFBD228232B1500CB8851 /* DivisasView.swift */; };
 		CAAFFBD628232EB400CB8851 /* DivisaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFFBD528232EB400CB8851 /* DivisaModel.swift */; };
 		CAAFFBD82823301200CB8851 /* ListItemDivisaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFFBD72823301200CB8851 /* ListItemDivisaView.swift */; };
+		CAAFFBDA2823E23E00CB8851 /* divisas.json in Resources */ = {isa = PBXBuildFile; fileRef = CAAFFBD92823E23D00CB8851 /* divisas.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CAAFFBD228232B1500CB8851 /* DivisasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisasView.swift; sourceTree = "<group>"; };
 		CAAFFBD528232EB400CB8851 /* DivisaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisaModel.swift; sourceTree = "<group>"; };
 		CAAFFBD72823301200CB8851 /* ListItemDivisaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemDivisaView.swift; sourceTree = "<group>"; };
+		CAAFFBD92823E23D00CB8851 /* divisas.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = divisas.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,9 @@
 		CAAFFBC52822917000CB8851 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				CAAFFBD528232EB400CB8851 /* DivisaModel.swift */,
 				CAAFFBC62822917000CB8851 /* Preview Assets.xcassets */,
+				CAAFFBD92823E23D00CB8851 /* divisas.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -87,7 +91,6 @@
 		CAAFFBD428232E9100CB8851 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CAAFFBD528232EB400CB8851 /* DivisaModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			files = (
 				CAAFFBC72822917000CB8851 /* Preview Assets.xcassets in Resources */,
 				CAAFFBC42822917000CB8851 /* Assets.xcassets in Resources */,
+				CAAFFBDA2823E23E00CB8851 /* divisas.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

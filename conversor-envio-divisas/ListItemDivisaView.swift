@@ -16,7 +16,7 @@ struct ListItemDivisaView: View {
             divisa.flag
                 .resizable()
                 .renderingMode(.original)
-                .frame(width: 100, height:60)
+                .frame(width: 80, height:50)
                 .aspectRatio(contentMode: .fill)
             
             VStack(alignment:.leading, spacing:0){

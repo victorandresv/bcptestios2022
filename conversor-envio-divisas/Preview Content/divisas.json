@@ -1,0 +1,62 @@
+[
+    {
+        "code": "USD",
+        "name": "Estados Unidos",
+        "price_buy": 1,
+        "price_sell": 1
+    },
+    {
+        "code": "EUR",
+        "name": "Unión Europea",
+        "price_buy": 0.94,
+        "price_sell": 0.96
+    },
+    {
+        "code": "PEN",
+        "name": "Perú",
+        "price_buy": 3.77,
+        "price_sell": 3.80
+    },
+    {
+        "code": "BRL",
+        "name": "Brasil",
+        "price_buy": 4.91,
+        "price_sell": 4.93
+    },
+    {
+        "code": "CLP",
+        "name": "Chile",
+        "price_buy": 853,
+        "price_sell": 855
+    },
+    {
+        "code": "COP",
+        "name": "Colombia",
+        "price_buy": 4067,
+        "price_sell": 4070
+    },
+    {
+        "code": "BOB",
+        "name": "Bolivia",
+        "price_buy": 6.86,
+        "price_sell": 6.89
+    },
+    {
+        "code": "MXN",
+        "name": "México",
+        "price_buy": 20,
+        "price_sell": 21
+    },
+    {
+        "code": "UYU",
+        "name": "Uruguay",
+        "price_buy": 40.6,
+        "price_sell": 41.1
+    },
+    {
+        "code": "ARS",
+        "name": "Argentina",
+        "price_buy": 116,
+        "price_sell": 118
+    }
+]

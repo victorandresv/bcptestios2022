@@ -17,14 +17,16 @@ private let Divisas = [
 
 struct DivisasView: View {
     
+    private var divisas: [Divisa] = Divisa.allDivisas
+    
     var body: some View {
-        
         VStack{
             Image("SplashSmall")
             Spacer()
             
-            List(Divisas, id: \.code) { divisa in
-                ListItemDivisaView(divisa: divisa)
+            List(divisas, id: \.code) { divisa in
+                let item = DivisaModel(code: divisa.code, name: divisa.name, flag: Image("Flag\(divisa.code)"), price: divisa.price_sell)
+                ListItemDivisaView(divisa: item)
             }
             
         }
