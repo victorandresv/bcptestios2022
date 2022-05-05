@@ -32,7 +32,7 @@ struct ListItemDivisaView: View {
 
 struct ListItemDivisaView_Previews: PreviewProvider {
     static var previews: some View {
-        var divisa = DivisaModel(code: "USD", name: "Estados Unidos", flag: Image("FlagUSD"), price: 1)
+        let divisa = DivisaModel(code: "USD", name: "Estados Unidos", flag: Image("FlagUSD"), price: 1)
         ListItemDivisaView(divisa: divisa)
     }
 }
