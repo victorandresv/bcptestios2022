@@ -3,60 +3,70 @@
         "code": "USD",
         "name": "Estados Unidos",
         "price_buy": 1,
-        "price_sell": 1
+        "price_sell": 1,
+        "coin_name": "Dolares"
     },
     {
         "code": "EUR",
         "name": "Unión Europea",
         "price_buy": 0.94,
-        "price_sell": 0.96
+        "price_sell": 0.96,
+        "coin_name": "Euros"
     },
     {
         "code": "PEN",
         "name": "Perú",
         "price_buy": 3.77,
-        "price_sell": 3.80
+        "price_sell": 3.80,
+        "coin_name": "Soles"
     },
     {
         "code": "BRL",
         "name": "Brasil",
         "price_buy": 4.91,
-        "price_sell": 4.93
+        "price_sell": 4.93,
+        "coin_name": "Reales"
     },
     {
         "code": "CLP",
         "name": "Chile",
         "price_buy": 853,
-        "price_sell": 855
+        "price_sell": 855,
+        "coin_name": "Pesos"
     },
     {
         "code": "COP",
         "name": "Colombia",
         "price_buy": 4067,
-        "price_sell": 4070
+        "price_sell": 4070,
+        "coin_name": "Pesos"
     },
     {
         "code": "BOB",
         "name": "Bolivia",
         "price_buy": 6.86,
-        "price_sell": 6.89
+        "price_sell": 6.89,
+        "coin_name": "Bolivianos"
     },
     {
         "code": "MXN",
         "name": "México",
         "price_buy": 20,
-        "price_sell": 21
+        "price_sell": 21,
+        "coin_name": "Pesos"
     },
     {
         "code": "UYU",
         "name": "Uruguay",
         "price_buy": 40.6,
-        "price_sell": 41.1
+        "price_sell": 41.1,
+        "coin_name": "Pesos"
     },
     {
         "code": "ARS",
         "name": "Argentina",
         "price_buy": 116,
-        "price_sell": 118
+        "price_sell": 118,
+        "coin_name": "Pesos"
     }
 ]

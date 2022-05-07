@@ -9,15 +9,16 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var cantidad_a_convertir: String = "100"
-    @State private var cantidad_convertida: String = "1000"
-    @State private var texto_divisa_desde: String = "Dólares"
-    @State private var texto_divisa_hacia: String = "Soles"
-    @State private var texto_precio_compra_venta: String = "Compra: 3.25 | Venta: 3.29"
+    @State private var divisa_a_convertir: Divisa = Divisa(code: "USD", name: "Estados Unidos", name_currency: "Dolares", price_buy: 1, price_sell: 1)
+    @State private var divisa_convertida: Divisa = Divisa(code: "EUR", name: "Unión Europea", name_currency: "Euros", price_buy: 0.94, price_sell: 0.96)
+    
+    @State private var cantidad_a_convertir: Float = 100
+    @State private var cantidad_convertida: Float = 1000
+    @State private var texto_precio_compra_venta: String = ""
     @State private var divisas_modal_is_presented = false
     
     var body: some View {
-            
+        
             VStack{
                 Image("SplashSmall")
                 Spacer()
@@ -29,7 +30,7 @@ struct HomeView: View {
                                 Text("Tú envías:")
                                     .font(.caption)
                                     .foregroundColor(Color.gray)
-                                TextField("100", text: $cantidad_a_convertir)
+                                TextField("Desde", value: $cantidad_a_convertir, formatter: NumberFormatter())
                                     .ignoresSafeArea()
                             }
                             .padding(8)
@@ -44,7 +45,7 @@ struct HomeView: View {
                                 Text("Tú recibes:")
                                     .font(.caption)
                                     .foregroundColor(Color.gray)
-                                TextField("100", text: $cantidad_convertida)
+                                TextField("Hasta", value: $cantidad_convertida, formatter: NumberFormatter())
                             }
                             .padding(8)
                         }
@@ -58,7 +59,7 @@ struct HomeView: View {
                                 
                                 HStack(spacing: 0){
                                     ZStack{}.frame(width: 10)
-                                    Button(self.texto_divisa_desde){ }
+                                    Button(self.divisa_a_convertir.name_currency){ }
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 12, weight: .bold, design: .default))
                                     .simultaneousGesture(LongPressGesture(minimumDuration: 1.0).onEnded({ _ in
@@ -86,7 +87,7 @@ struct HomeView: View {
                                 
                                 HStack(spacing: 0){
                                     ZStack{}.frame(width: 10)
-                                    Button(self.texto_divisa_hacia){
+                                    Button(self.divisa_convertida.name_currency){
                                         
                                     }
                                     .foregroundColor(Color.white)
@@ -123,6 +124,12 @@ struct HomeView: View {
                     .padding(22)
                 }
                 .frame(height: 60)
+            }
+            .onAppear(){
+                
+                self.texto_precio_compra_venta = "Compra: \(self.divisa_convertida.price_buy) | Venta: \(self.divisa_convertida.price_sell)"
+                
+                self.cantidad_convertida = self.cantidad_a_convertir * self.divisa_convertida.price_sell
             }
         
     }

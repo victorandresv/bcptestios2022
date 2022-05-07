@@ -19,6 +19,9 @@ struct DivisasView: View {
             List(divisas, id: \.code) { divisa in
                 let item = DivisaModel(code: divisa.code, name: divisa.name, flag: Image("Flag\(divisa.code)"), price: divisa.price_sell)
                 ListItemDivisaView(divisa: item)
+                    .onTapGesture {
+                        print("tap:"+item.code)
+                    }
             }
             
         }

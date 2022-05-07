@@ -15,7 +15,7 @@ struct DivisaModel {
 }
 
 struct Divisa: Codable {
-    var code, name: String
+    var code, name, name_currency: String
     var price_buy, price_sell: Float
     
     static let allDivisas: [Divisa] = Bundle.main.decode(file: "divisas.json")
