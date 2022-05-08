@@ -9,7 +9,9 @@ import SwiftUI
 
 struct DivisasView: View {
     
-    private var divisas: [Divisa] = Divisa.allDivisas
+    var divisas: [Divisa] = Divisa.allDivisas
+    @Binding var seleccion: Divisa
+    @Binding var isPresented: Bool
     
     var body: some View {
         VStack{
@@ -20,16 +22,11 @@ struct DivisasView: View {
                 let item = DivisaModel(code: divisa.code, name: divisa.name, flag: Image("Flag\(divisa.code)"), price: divisa.price_sell)
                 ListItemDivisaView(divisa: item)
                     .onTapGesture {
-                        print("tap:"+item.code)
+                        self.seleccion = divisa
+                        self.isPresented = false
                     }
             }
             
         }
-    }
-}
-
-struct DivisasView_Previews: PreviewProvider {
-    static var previews: some View {
-        DivisasView()
     }
 }
